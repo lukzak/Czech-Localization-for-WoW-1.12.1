@@ -36,7 +36,7 @@ I am not a native Czech speaker - I am simply a fan of the language. Although I 
 * Some words are not translated consistently. Warrior Rage was translated sometimes as "Vztek" and sometimes as "Zuřivost".
 * Sometimes descriptions of the same spell had different ranks translated differently. They are usually both correct, but consistency is desired.
 * References to spell names in the descriptions were translated. This conflicts with our aim to keep spell names in English. This is super visible on Paladins with the [Forbearance debuff](https://www.wowhead.com/classic/spell=25771/forbearance). Divine Shield should stay as Divine Shield, not "Božský štít".
-* Crafting Spells/Recipes have their spell name in English, but the descriptions have the produced item names in Czech. The [Pattern: White Wedding Dress](https://www.wowhead.com/classic/item=10325/pattern-white-wedding-dress) has the spell description "Naučí vás vyrobit bílé svátečné šaty" instead of "Naučí vás vyrobit White Wedding Dress".
+* Crafting Spells/Recipes have their spell name in English, but the descriptions have the produced item names in Czech. The [Pattern: White Wedding Dress](https://www.wowhead.com/classic/item=10325/pattern-white-wedding-dress) has the spell description "Naučí vás vyrobit bílé svátební šaty" instead of "Naučí vás vyrobit White Wedding Dress".
 * General linguistic inconsistencies. Sometimes it using Ty form, sometimes Vy form. Somtimes "Naučí vás" and sometimes "Učí tě".
 
 # What can I do to help?
