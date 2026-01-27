@@ -22,6 +22,7 @@ To avoid adding another language to this Tower of Babel, I have decided against 
 * Emotes
 * Quest texts/objectives
 * Spell and Spell Aura Descriptions
+* Descriptions of what stats do (Stamina: Zvyšuje hodnotu zdraví)
 
 ## How to build this patch manually with your own changes
 You will need [Ladik's MPQ Editor](https://www.zezula.net/en/mpq/download.html) and [WDBXEditor](https://github.com/WowDevTools/WDBXEditor).
