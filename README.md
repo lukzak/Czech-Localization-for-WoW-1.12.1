@@ -1,5 +1,5 @@
 # Czech-Localization-for-WoW-1.12.1
-Modification/Continuation of work on the Czech localization for 1.12.1 done by the community at wowpreklad.zdechov.net.
+Modification/Continuation of work on the Czech localization for 1.12.1 done by the community at [wowpreklad.zdechov.net](http://wowpreklad.zdechov.net/).
 
 The main aim of this project is to allow Czech players who are new at the game to jump into 1.12.1 servers and have an easier time getting used to how their spells/talents work, while also avoiding communication problems that arise from Blizzard's official translations of the games.
 
@@ -23,10 +23,31 @@ To avoid adding another language to this Tower of Babel, I have decided against 
 * Quest texts/objectives
 * Spell and Spell Aura Descriptions
 
-# How is this done?
-The community of wowpreklad.zdechov.net already made some great progress on translating UI stuff, emotes, and quests. However, a lot of spell descriptions were still missing (over 20 thousand)
+# How to build this patch manually with your own changes
+You will need [Ladik's MPQ Editor](https://www.zezula.net/en/mpq/download.html) and [WDBXEditor](https://github.com/WowDevTools/WDBXEditor).
 
-Utilizing [WDBXEditor](https://github.com/WowDevTools/WDBXEditor), we can export the spell.dbc made by the original project to a CSV file. Using some python scripts, I filtered out all of the already translated spell descriptions and then used machine translation on the leftover untranslated English spell/aura descriptions. I used another script to insert these back into the CSV file and re-imported it into the spell.dbc
+Use WDBXEditor to edit any of the dbc files in the patch in the dbfilesclient folder. Everything else can be edited using your text editor of choice.
+
+Once your changes are complete, you need to use Ladik's MPQ Editor to build the patch.
+
+# Where can I use this patch?
+This patch should be fine on any stock 1.12.1 vanilla server without any issues. However, it **IS** a game file mod that might not be allowed on some projects. Always ask your server's admins if it is alright.
+
+# What about custom 1.12.1 servers?
+It can work, but you will need to build the patch yourself. It also depends on how heavily modified the server is. A server with minimal changes to spells (think % changes that variables can show automatically - not major spell reworks) should be easy to work with. You would simply export their spell.dbc to a CSV file and then run the included script to apply our localization to the CSV. Then re-import the CSV file. You could even add your own translations for custom spells if you want (but please don't open PRs to apply them here. We only support stock 1.12.1 localization).
+
+If the server is super heavily modified (like Turtle-WoW), you would need to carefully examine their GLUE changes and copy our localizations over their strings.
+
+# How to use this patch?
+Download the patch-Y from the release section and place it in your Wow1.12.1\Data folder. As this patch translates UI elements, you will also need to use a .exe file that has been patched to support modded GLUE files.
+This .exe has a different hash than the standard .exe, so some severs might not let you connect. In that case, you should delete the interface folder inside the patch. This means the UI will be in English again, but spells/emotes/quests should still be in Czech. Or ask your server admin very nicely to whitelist the patched .exe hash.
+
+This patch should be loaded after all other patches. The 1.12.1 client loads patches numerically and then alphabetically, so feel free to rename it from patch-Y to whatever works for your load order.
+
+# How is this done?
+The community at [wowpreklad.zdechov.net](http://wowpreklad.zdechov.net/) already made some great progress on translating UI stuff, emotes, and quests. However, a lot of spell descriptions were still missing (over 20 thousand)
+
+I used [Ladik's MPQ Editor](https://www.zezula.net/en/mpq/download.html) to open the original project patch. Utilizing [WDBXEditor](https://github.com/WowDevTools/WDBXEditor), we can export the spell.dbc made by the original project to a CSV file. Using some python scripts, I filtered out all of the already translated spell descriptions and then used machine translation on the leftover untranslated English spell/aura descriptions. I used another script to insert these back into the CSV file and re-imported it into the spell.dbc
 
 # Potential Issues
 I am not a native Czech speaker - I am simply a fan of the language. Although I am great at this language, mistakes happen. Especially when the spell descriptions can take on a fantasy-style tone which I don't know how to replicate authentically in Czech.
