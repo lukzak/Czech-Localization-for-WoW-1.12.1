@@ -3,7 +3,7 @@ Modification/Continuation of work on the Czech localization for 1.12.1 done by t
 
 The main aim of this project is to allow Czech players who are new at the game to jump into 1.12.1 servers and have an easier time getting used to how their spells/talents work, while also avoiding communication problems that arise from Blizzard's official translations of the games.
 
-Most private servers allow connections from any 1.12.1 client, which means that players cooperating together might run into communication challenges. For example, in voice chats, a Russian player might not know the name of a buff that he needs from his English speaking guildmate. This is because spell names, item names, and talent names are all translated in the various official localizations.
+Most private servers allow connections from any 1.12.1 client, which means that players cooperating together might run into communication challenges. For example, in voice chats, a Russian player might not know the English name of a buff that he needs from his English speaking raid mate. This is because spell names, item names, and talent names are all translated in the various official localizations.
 
 # What will be translated?
 To avoid adding another language to this Tower of Babel, I have decided against translating some parts of the game. Basically, only things that are visible to the player will be translated. Anything that would need to be communicated to another player will retain the English name.
