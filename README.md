@@ -26,9 +26,9 @@ To avoid adding another language to this Tower of Babel, I have decided against 
 ## How to build this patch manually with your own changes
 You will need [Ladik's MPQ Editor](https://www.zezula.net/en/mpq/download.html) and [WDBXEditor](https://github.com/WowDevTools/WDBXEditor).
 
-Use WDBXEditor to edit any of the dbc files in the patch in the dbfilesclient folder. Everything else can be edited using your text editor of choice.
+Use WDBXEditor to edit any of the dbc files in the patch in the dbfilesclient folder or edit the CSV files and then import them into the DBC file using WDBXEditor. Everything else can be edited using your text editor of choice.
 
-Once your changes are complete, you need to use Ladik's MPQ Editor to build the patch.
+Once your changes are complete, you need to use Ladik's MPQ Editor to build the patch. Feel free to remove the spelldbcediting folder and the .CSV files in the dbfilesclient folder, as they are not loaded by the game.
 
 ## Where can I use this patch?
 This patch should be fine on any stock 1.12.1 vanilla server without any issues. However, it is a game file mod that might not be allowed on some projects. Always ask your server's admin if it is alright.
@@ -43,6 +43,13 @@ Download the patch-Y from the release section and place it in your Wow1.12.1\Dat
 This .exe has a different hash than the standard .exe, so some severs might not let you connect. In that case, you need to build the patch yourself and delete the interface\GlueXML folder inside the patch. This means the UI will be in English again, but spells/emotes/quests should still be in Czech. Or ask your server admin very nicely to whitelist the patched .exe hash.
 
 This patch should be loaded after all other patches. The 1.12.1 client loads patches numerically and then alphabetically, so feel free to rename it from patch-Y to whatever works for your load order.
+
+## How to edit spell.dbc?
+The spell.dbc file is massive and can be a pain to do large edits in WDBXEditor. And exporting it to CSV is also horrible as it has so many entries. To simplify editing spell and spell aura descriptions, I have included the folder spelldbcediting. Inside you will find a python script and a CSV file that contains all of the localization edits made on spell.dbc. This form is much easier to edit, as it only has 3 cells per entry. The cells correspond to the "ID", "Description_enUS", and "AuraDescription_enUS" fields in spell.dbc.
+
+Make your edits and be sure to follow the formatting in the file, otherwise the python script and import process might not work properly.
+
+After your edits are done, use WDBXEditor on spell.dbc to export spell.CSV to your spelldbcediting. Then just run the patch_spell.py script and it will generate spell_updated.csv. Using WDBXEditor, import this new spell_updated.csv. Make sure to select Override All, Take Newest, and enable "Had Header Row?". If the import is successful, don't forget to save the .dbc file. Then put your new spell.dbc into the dbfilesclient folder and then build the patch with Ladik's MPQ Editor.
 
 ## How is this done?
 The community at [wowpreklad.zdechov.net](http://wowpreklad.zdechov.net/) already made some great progress on translating UI stuff, emotes, and quests. However, a lot of spell descriptions were still missing (over 20 thousand)
