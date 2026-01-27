@@ -1,0 +1,19 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/.\FrameXML\UI.xsd">
+<script file="CountFiles.lua"/>
+<script file="Creature_1.lua"/>
+<script file="ObjectName_1.lua"/>
+<script file="BookPage_1.lua"/>
+<script file="NPCAction_1.lua"/>
+<script file="Creature_2.lua"/>
+<script file="NPCText_1.lua"/>
+<script file="NPCText_2.lua"/>
+<script file="NPCText_3.lua"/>
+<script file="NPCText_4.lua"/>
+<script file="NPCText_5.lua"/>
+<script file="NPCText_6.lua"/>
+<script file="ItemDescription_1.lua"/>
+<script file="QuestDescription_1.lua"/>
+<script file="QuestObjective_1.lua"/>
+<script file="QuestReward_1.lua"/>
+<script file="QuestProgress_1.lua"/>
+</Ui>

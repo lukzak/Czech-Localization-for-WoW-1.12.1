@@ -1,0 +1,30 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+  <Frame name="GameMenuFrame" parent="GameMenuFrame">
+    <Layers>
+      <Layer level="BACKGROUND">
+        <Texture name="GameMenuFrameHeader" file="Interface\DialogFrame\UI-DialogBox-Header">
+          <Size>
+            <AbsDimension x="256" y="64"/>
+          </Size>
+          <Anchors>
+            <Anchor point="TOP" relativeTo="GameMenuFrame">
+              <Offset>
+                <AbsDimension x="0" y="12"/>
+              </Offset>
+            </Anchor>
+          </Anchors>
+        </Texture>
+        <FontString name="CzWoW_MAIN_MENU" inherits="GameFontNormal" text="MAIN_MENU">
+          <Anchors>
+            <Anchor point="TOP" relativeTo="GameMenuFrameHeader">
+              <Offset>
+                <AbsDimension x="0" y="-14"/>
+              </Offset>
+            </Anchor>
+          </Anchors>
+        </FontString>
+      </Layer>
+    </Layers>
+  </Frame>
+</Ui>

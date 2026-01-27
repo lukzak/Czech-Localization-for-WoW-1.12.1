@@ -1,0 +1,27 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+	<Script file="localizationStrings.lua"/>
+	<Script file="Localization.lua"/>
+<script file="tallent.lua"/>
+	<Script file="CzWoW.lua"/>
+	<Frame name="CzWoW" parent="UIParent">
+		<Scripts>
+			<OnLoad>
+				CzWoW_OnLoad();
+			</OnLoad>
+			<OnEvent>
+				CzWoW_OnEvent(event);
+			</OnEvent>
+			<OnUpdate>
+				CZWOW_OnUpdate();
+			</OnUpdate>
+		</Scripts>
+	</Frame>
+	<Frame name="GameTooltip" parent="GameTooltip" hidden="false">
+		<Scripts>
+			<OnUpdate>
+				CZWOW_GameTooltip_OnUpdate();
+			</OnUpdate>
+		</Scripts>
+	</Frame>
+</Ui>

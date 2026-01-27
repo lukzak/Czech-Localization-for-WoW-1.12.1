@@ -1,0 +1,6 @@
+## Interface: 11200
+## SavedVariables: CZWOW_EnableQuests, CZWOW_EnableSpells, CZWOW_EnableBooks, CZWOW_EnableCreatures, CZWOW_EnableNPCs, CZWOW_EnableInterface, CZWOW_EnableCombatLog
+Translates.xml
+GameMenuFrame.xml
+OptionsFrame.xml
+CzWoW.xml

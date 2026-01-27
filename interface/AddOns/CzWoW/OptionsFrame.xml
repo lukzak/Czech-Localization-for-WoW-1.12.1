@@ -1,0 +1,94 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+	<Frame name="SoundOptionsFrame" parent="AudioOptionsFrame">
+		<Anchors>
+			<Anchor point="CENTER"/>
+		</Anchors>
+		<Layers>
+			<Layer level="ARTWORK">
+				<Texture name="SoundOptionsFrameHeader" file="Interface\DialogFrame\UI-DialogBox-Header">
+					<Size>
+						<AbsDimension x="256" y="64"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOP" relativeTo="AudioOptionsFrameHeader">
+							<Offset>
+								<AbsDimension x="0" y="0"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</Texture>
+					<FontString name="CzWoW_SOUND_OPTIONS" inherits="GameFontNormal" text="SOUND_OPTIONS">
+					<Anchors>
+						<Anchor point="TOP" relativeTo="AudioOptionsFrameHeader">
+							<Offset>
+								<AbsDimension x="0" y="-14"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+	</Frame>
+	<Frame name="OptionsFrame" parent="OptionsFrame">
+		<Layers>
+			<Layer level="ARTWORK">
+				<Texture name="OptionsFrameHeader" file="Interface\DialogFrame\UI-DialogBox-Header">
+					<Size>
+						<AbsDimension x="256" y="64"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOP" relativeTo="OptionsFrame">
+							<Offset>
+								<AbsDimension x="0" y="12"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</Texture>
+				<FontString name="CzWoW_VIDEOOPTIONS_MENU" inherits="GameFontNormal" text="VIDEOOPTIONS_MENU">
+					<Anchors>
+						<Anchor point="TOP" relativeTo="OptionsFrameHeader">
+							<Offset>
+								<AbsDimension x="0" y="-14"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+    <!--Frames>
+      <Frame name="OptionsFrameResolutionDropDown" inherits="UIDropDownMenuTemplate" enableMouse="true" >
+        <Anchors>
+          <Anchor point="TOPLEFT" relativeTo="OptionsFrame">
+            <Offset>
+              <AbsDimension x="-8" y="-70"/>
+            </Offset>
+          </Anchor>
+        </Anchors>
+        <Layers>
+          <Layer level="ARTWORK">
+            <Texture name="OptionsFrameHeader" file="Interface\DialogFrame\UI-DialogBox-Header">
+              <Size>
+                <AbsDimension x="256" y="64"/>
+              </Size>
+              <Anchors>
+                <Anchor point="TOP" relativeTo="OptionsFrameResolutionDropDown">
+                  <Offset>
+                    <AbsDimension x="0" y="0"/>
+                  </Offset>
+                </Anchor>
+              </Anchors>
+            </Texture>
+          </Layer>
+        </Layers>
+            
+        <Scripts>
+          <OnEnter>DEFAULT_CHAT_FRAME:AddMessage("dfgdfgdfg");</OnEnter>
+          <OnShow>DEFAULT_CHAT_FRAME:AddMessage("dfgdfgdfg");</OnShow>
+          <OnClick>DEFAULT_CHAT_FRAME:AddMessage("dfgdfgdfg");</OnClick>
+          <OnEvent>DEFAULT_CHAT_FRAME:AddMessage("event");</OnEvent>
+        </Scripts>
+      </Frame>
+    </Frames-->
+	</Frame>
+</Ui>

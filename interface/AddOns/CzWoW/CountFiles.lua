@@ -1,0 +1,16 @@
+CZWOW_Creature_count=1;
+CZWOW_ObjectName_count=1;
+CZWOW_BookPage_count=1;
+CZWOW_NPCAction_count=1;
+CZWOW_Creature_count=2;
+CZWOW_NPCText_count=1;
+CZWOW_NPCText_count=2;
+CZWOW_NPCText_count=3;
+CZWOW_NPCText_count=4;
+CZWOW_NPCText_count=5;
+CZWOW_NPCText_count=6;
+CZWOW_ItemDescription_count=1;
+CZWOW_QuestDescription_count=1;
+CZWOW_QuestObjective_count=1;
+CZWOW_QuestReward_count=1;
+CZWOW_QuestProgress_count=1;
