@@ -31,16 +31,16 @@ Use WDBXEditor to edit any of the dbc files in the patch in the dbfilesclient fo
 Once your changes are complete, you need to use Ladik's MPQ Editor to build the patch.
 
 ## Where can I use this patch?
-This patch should be fine on any stock 1.12.1 vanilla server without any issues. However, it **IS** a game file mod that might not be allowed on some projects. Always ask your server's admins if it is alright.
+This patch should be fine on any stock 1.12.1 vanilla server without any issues. However, it is a game file mod that might not be allowed on some projects. Always ask your server's admin if it is alright.
 
 ## What about custom 1.12.1 servers?
 It can work, but you will need to build the patch yourself. It also depends on how heavily modified the server is. A server with minimal changes to spells (think % changes that variables can show automatically - not major spell reworks) should be easy to work with. You would simply export their spell.dbc to a CSV file and then run the included script to apply our localization to the CSV. Then re-import the CSV file. You could even add your own translations for custom spells if you want (but please don't open PRs to apply them here. We only support stock 1.12.1 localization).
 
-If the server is super heavily modified (like Turtle-WoW), you would need to carefully examine their GLUE changes and copy our localizations over their strings.
+If the server is super heavily modified (like Turtle-WoW), you would need to carefully examine their interface changes and copy our localizations over their strings.
 
 ## How to use this patch?
 Download the patch-Y from the release section and place it in your Wow1.12.1\Data folder. As this patch translates UI elements, you will also need to use a .exe file that has been patched to support modded GLUE files.
-This .exe has a different hash than the standard .exe, so some severs might not let you connect. In that case, you should delete the interface folder inside the patch. This means the UI will be in English again, but spells/emotes/quests should still be in Czech. Or ask your server admin very nicely to whitelist the patched .exe hash.
+This .exe has a different hash than the standard .exe, so some severs might not let you connect. In that case, you need to build the patch yourself and delete the interface\GlueXML folder inside the patch. This means the UI will be in English again, but spells/emotes/quests should still be in Czech. Or ask your server admin very nicely to whitelist the patched .exe hash.
 
 This patch should be loaded after all other patches. The 1.12.1 client loads patches numerically and then alphabetically, so feel free to rename it from patch-Y to whatever works for your load order.
 
