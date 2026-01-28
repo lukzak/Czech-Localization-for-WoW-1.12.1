@@ -41,7 +41,9 @@ If the server is super heavily modified (like Turtle-WoW), you would need to car
 
 ## How to use this patch?
 Download the patch-Y from the release section and place it in your Wow1.12.1\Data folder. As this patch translates UI elements, you will also need to use a .exe file that has been patched to support modded GLUE files.
-You can use the provided .exe file in the Releases section of the repo. This .exe has a different hash than the standard .exe, so some severs might not let you connect. In that case, you need to build the patch yourself and delete the interface\GlueXML and interface\FrameXML folders inside the patch. This means the UI will be in English again, but spells/emotes/quests should still be in Czech. Or ask your server admin very nicely to whitelist the patched .exe hash.
+You can use the provided .exe file in the Releases section of the repo. 
+
+This .exe has a different hash than the standard .exe, so some severs might not let you connect. In that case, you need to build the patch yourself and delete the interface\GlueXML and interface\FrameXML folders inside the patch. This means the UI will be in English again, but spells/emotes/quests should still be in Czech. Or ask your server admin very nicely to whitelist the patched .exe hash.
 
 This patch should be loaded after all other patches. The 1.12.1 client loads patches numerically and then alphabetically, so feel free to rename it from patch-Y to whatever works for your load order.
 
