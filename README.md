@@ -40,7 +40,7 @@ It can work, but you will need to build the patch yourself. It also depends on h
 If the server is super heavily modified (like Turtle-WoW), you would need to carefully examine their interface changes and copy our localizations over their strings.
 
 ## How to use this patch?
-Download the patch-Y from the release section and place it in your Wow1.12.1\Data folder. As this patch translates UI elements, you will also need to use a .exe file that has been patched to support modded GLUE files.
+Download the patch-Y from the Releases section and place it in your Wow1.12.1\Data folder. As this patch translates UI elements, you will also need to use a .exe file that has been patched to support modded GLUE files.
 You can use the provided .exe file in the Releases section of the repo. 
 
 This .exe has a different hash than the standard .exe, so some severs might not let you connect. In that case, you need to build the patch yourself and delete the interface\GlueXML and interface\FrameXML folders inside the patch. This means the UI will be in English again, but spells/emotes/quests should still be in Czech. Or ask your server admin very nicely to whitelist the patched .exe hash.
