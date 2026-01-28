@@ -50,10 +50,12 @@ The spell.dbc file is massive and can be a pain to do large edits in WDBXEditor.
 
 Make your edits and be sure to follow the formatting in the file, otherwise the python script and import process might not work properly.
 
-After your edits are done, use WDBXEditor on spell.dbc to export spell.CSV to your spelldbcediting. Then just run the patch_spell.py script and it will generate spell_updated.csv. Using WDBXEditor, import this new spell_updated.csv. Make sure to select Override All, Take Newest, and enable "Had Header Row?". If the import is successful, don't forget to save the .dbc file. Then put your new spell.dbc into the dbfilesclient folder and then build the patch with Ladik's MPQ Editor.
+After your edits are done, use WDBXEditor on spell.dbc to export spell.csv to your spelldbcediting folder. With spell.csv and spell_Auras_descriptions.csv in the same folder, you can run the patch_spell.py script and it will generate a new CSV file: spell_updated.csv. Using WDBXEditor, import this new spell_updated.csv into your spell.dbc. 
 
-## How is this done?
-The community at [wowpreklad.zdechov.net](http://wowpreklad.zdechov.net/) already made some great progress on translating UI stuff, emotes, and quests. However, a lot of spell descriptions were still missing (over 20 thousand)
+Make sure to select Override All, Take Newest, and enable "Has Header Row?". If the import is successful, don't forget to save the .dbc file. Then put your new spell.dbc into the dbfilesclient folder and then build the patch with Ladik's MPQ Editor.
+
+## How was this done?
+The community at [wowpreklad.zdechov.net](http://wowpreklad.zdechov.net/) already made some great progress on translating UI stuff, emotes, and quests. However, a lot of spell descriptions were still missing (over 10 thousand)
 
 I used [Ladik's MPQ Editor](https://www.zezula.net/en/mpq/download.html) to open the original project patch. Utilizing [WDBXEditor](https://github.com/WowDevTools/WDBXEditor), we can export the spell.dbc made by the original project to a CSV file. Using some python scripts, I filtered out all of the already translated spell descriptions and then used machine translation on the leftover untranslated English spell/aura descriptions. I used another script to insert these back into the CSV file and re-imported it into the spell.dbc
 
