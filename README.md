@@ -71,6 +71,7 @@ While playing the game, I note down any weird translation problems and then manu
 * References to spell names in the descriptions were translated. This conflicts with our aim to keep spell names in English. This is super visible on Paladins with the [Forbearance debuff](https://www.wowhead.com/classic/spell=25771/forbearance). Divine Shield should stay as Divine Shield, not "Božský štít".
 * Crafting Spells/Recipes have their spell name in English, but the descriptions have the produced item names in Czech. The [Pattern: White Wedding Dress](https://www.wowhead.com/classic/item=10325/pattern-white-wedding-dress) has the spell description "Naučí vás vyrobit bílé svatební šaty" instead of "Naučí vás vyrobit White Wedding Dress".
 * General linguistic inconsistencies. Sometimes it using Ty form, sometimes Vy form. Somtimes "Naučí vás" and sometimes "Učí tě".
+* Formatting issues: Machine translation sometimes didn't preserve line breaks. This mostly affects Finishing move spells for Rogues/Druids where they explain how much damage you do based on the number of combo points. Each combo point should have its own line.
 
 ## What can I do to help?
 The best help would be to just play the game with the patch and note down any issues you see. Feel free to create an Issue on the repo with the relevant details (spell ID from [Wowhead](https://www.wowhead.com/classic) or [Classic DB](https://classicdb.ch/) and the correct way to translate the spell would be much appreciated.).
