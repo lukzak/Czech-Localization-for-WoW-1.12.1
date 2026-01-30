@@ -8,6 +8,8 @@ Most private servers allow connections from any 1.12.1 client, which means that 
 # What will be translated?
 To avoid adding another language to this Tower of Babel, I have decided against translating some parts of the game. Basically, only things that are visible to the player will be translated. Anything that would need to be communicated to another player will retain the English name.
 
+As Spell Descriptions/Auras make up a large amount of the total strings, it would be relativley little work to make a full translation.
+
 ### Some examples of things we will **not** translate:
 * Spell Names
 * Spell School Names
@@ -20,7 +22,7 @@ To avoid adding another language to this Tower of Babel, I have decided against 
 ### Some examples of things we will translate:
 * UI elements
 * Emotes
-* Quest texts/objectives
+* Quest texts/objectives (maybe in the future)
 * Spell and Spell Aura Descriptions
 * Descriptions of what stats do (Stamina: Zvyšuje hodnotu zdraví)
 
