@@ -72,6 +72,7 @@ While playing the game, I note down any weird translation problems and then manu
 * Crafting Spells/Recipes have their spell name in English, but the descriptions have the produced item names in Czech. The [Pattern: White Wedding Dress](https://www.wowhead.com/classic/item=10325/pattern-white-wedding-dress) has the spell description "Naučí vás vyrobit bílé svatební šaty" instead of "Naučí vás vyrobit White Wedding Dress".
 * General linguistic inconsistencies. Sometimes it using Ty form, sometimes Vy form. Somtimes "Naučí vás" and sometimes "Učí tě".
 * Formatting issues: Machine translation sometimes didn't preserve line breaks. This mostly affects Finishing move spells for Rogues/Druids where they explain how much damage you do based on the number of combo points. Each combo point should have its own line.
+* Power and Strength are both translated as Síla in many cases. Attack Power and Strength are 2 different stats, so pay attention to "Síla" vs "Síla útoku". To be safe, maybe also ctrl + F for "Síla útoků" as well. It may be beneficial to manually verify these with wowhead to make sure you translate it the correct way.
 
 ## What can I do to help?
 The best help would be to just play the game with the patch and note down any issues you see. Feel free to create an Issue on the repo with the relevant details (spell ID from [Wowhead](https://www.wowhead.com/classic) or [Classic DB](https://classicdb.ch/) and the correct way to translate the spell would be much appreciated.).
