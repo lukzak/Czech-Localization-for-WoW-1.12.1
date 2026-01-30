@@ -62,7 +62,8 @@ The community at [wowpreklad.zdechov.net](http://wowpreklad.zdechov.net/) alread
 I used [Ladik's MPQ Editor](https://www.zezula.net/en/mpq/download.html) to open the original project patch. Utilizing [WDBXEditor](https://github.com/WowDevTools/WDBXEditor), we can export the spell.dbc made by the original project to a CSV file. Using some python scripts, I filtered out all of the already translated spell descriptions and then used machine translation on the leftover untranslated English spell/aura descriptions. I used another script to insert these back into the CSV file and re-imported it into the spell.dbc
 
 # Potential Issues
-While playing the game, I note down any weird translation problems and then manually fix them later. I am not a native Czech speaker - I am simply a fan of the language. Although I am great at this language, mistakes happen. Especially when the spell descriptions can take on a fantasy-style tone which I don't always know how to replicate authentically in Czech.
+* While playing the game, I note down any weird translation problems and then manually fix them later. I am not a native Czech speaker - I am simply a fan of the language. Although I am great at this language, mistakes happen. Especially when the spell descriptions can take on a fantasy-style tone which I don't always know how to replicate authentically in Czech.
+* Take care when ctrl + H replacing. Síla is contained in the words sesílané, sesílatelem, etc. Don't forget about word cases and gender markers too. Always do a onceover in notepad++ to verify what you are really replacing.
 
 ### Machine Translation issues
 
